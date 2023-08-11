@@ -41,7 +41,7 @@ public class TheStack : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            if (PLaceTile())
+            if (PlaceTile())
             {
                 SpawnTile();
                 scoreCount++;
@@ -83,7 +83,7 @@ public class TheStack : MonoBehaviour
         theStack[stackIndex].transform.localScale = new Vector3(stackBounds.x, 1, stackBounds.y);
 
     }
-    private bool PLaceTile()
+    private bool PlaceTile()
     {
         Transform t = theStack[stackIndex].transform;
 
@@ -150,7 +150,7 @@ public class TheStack : MonoBehaviour
         }
 
 
-        secondaryPosition = (!isMovingOnX)
+        secondaryPosition = (isMovingOnX)
             ? t.localPosition.x
             : t.localPosition.z;
         isMovingOnX = !isMovingOnX;
