@@ -182,7 +182,7 @@ MonoBehaviour:
   scoreText: {fileID: 1520557307}
   gameColors:
   - serializedVersion: 2
-    rgba: 16316664
+    rgba: 15725014
   - serializedVersion: 2
     rgba: 3798354
   - serializedVersion: 2
@@ -1870,7 +1870,7 @@ GameObject:
   - component: {fileID: 1520557308}
   - component: {fileID: 1520557307}
   m_Layer: 5
-  m_Name: RetryButton
+  m_Name: ScoreCount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

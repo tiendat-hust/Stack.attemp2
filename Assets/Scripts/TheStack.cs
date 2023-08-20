@@ -13,7 +13,7 @@ public class TheStack : MonoBehaviour
 
     private const float BOUNDS_SIZE = 3.5f;
     private const float STACK_MOVING_SPEED = 5.0f;
-    private const float ERROR_MARGIN = 0.03f;
+    private const float ERROR_MARGIN = 0.01f;
     private const float STACK_BOUNDS_GAIN = 0.25f;
     private const int COMBO_START_GAIN = 3;
 
@@ -26,7 +26,7 @@ public class TheStack : MonoBehaviour
     private int combo = 0;
 
     private float tileTransition = 0.0f;
-    private float tileSpeed = 1.5f;
+    private float tileSpeed = 1.75f;
     private float secondaryPosition;
 
     private bool isMovingOnX = true;
@@ -193,7 +193,7 @@ public class TheStack : MonoBehaviour
         }
 
 
-        secondaryPosition = (!isMovingOnX)
+        secondaryPosition = (isMovingOnX)
             ? t.localPosition.x
             : t.localPosition.z;
         isMovingOnX = !isMovingOnX;
